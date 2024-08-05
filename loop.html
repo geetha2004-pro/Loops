@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <body>
+    <select id="course"></select>
+    <select id="duratio-n"></select>
+   <select  id="view"></select> 
+
+    <!-- <select  id="day"></select>
+    <select  id="month"></select>
+    <select  id="year"></select> -->
+    <script>
+     
+        // ------day------------
+//         let day='<option>---day-----</option>'
+// for(i=1;i<=31;i++){
+//     day+='<option>'+i+'</option>'
+// }
+// document.getElementById('day').innerHTML=day;
+
+
+
+// //---------------month------------------
+
+// let month='<option>---month-----</option>'
+// for(i=1;i<=12;i++){
+//     month+='<option>'+i+'</option>'
+// }
+// document.getElementById('month').innerHTML=month;
+
+// //--------------year---------------------
+// let year='<option>----year---</option>'
+// for(i=2024;i>=1900;i--){
+//     year+='<option>'+i+"</option>"
+// }
+// document.getElementById('year').innerHTML=year; 
+
+
+
+//-----------------today task---------------
+let courses=['c','c++','java','python','javascript','reactjs',' Angular6','Full-Stack-Developer','Cyber-Security-Course','Node.js-Developer']
+console.log(courses[3]);
+
+let course='<option>----course----</option>'
+for(i=0;i<10;i++){
+    course+='<option>'+courses[i]+'</option>'
+}
+document.getElementById('course').innerHTML=course;
+// // ----------duration--------------
+let duration=['16Jan2023','17Feb2023','17March203','18April2023','19MAY2023','20Jun2024','21July2024','22August','23Sept2024','24oct2024']
+console.log(duration);
+
+let durations='<option>--duration---</option>'
+for(i=0;i<10;i++){
+durations+='<option>'+duration[i]+'</option>'
+}
+document.getElementById('duratio-n').innerHTML=durations;
+// //location
+let locations=['bangalore','andhrapradesh','mumbai','chennai','delhi','kerala','hydrabad','madhyapradesh','mijoram','uttarpradhesh']
+console.log("locations");
+let locate='<option>---location.---</option>'
+    for(i=0;i<10;i++){
+        locate+='<option>'+locations[i]+'</option>'
+    }
+    document.getElementById('view').innerHTML=locate;
+
+   
+    </script>
+</body>
+</html>

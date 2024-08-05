@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!------------------------ loops---------------
+  1.  for loop
+  syntax:
+  for(initialization;condition; increa/decrea;)
+  {
+      statement
+  }
+  2.while loop
+  3.do while loop
+  4.for of loop
+  5.for in loop
+    
+    
+    
+    -->
+
+    <script src="./loops.js">
+    //  1.for loop
+    for(i=1; i<=10;i++){
+        console.log(i);
+
+    } 
+    // it's printed the 1to10 numbers
+    for(i=10; i>0;i--){
+        console.log(i);
+
+    } 
+    //it's printed reverse
+    for(i=1; i<10;i+=2){
+        console.log(i);
+
+    } 
+    //odd numbers
+    //using increament(+=)(i+=2)(1+=2=3)and it means to increased the 2values
+    for(i=2;i<=20; i+=2){
+        console.log(i);
+    }
+    //even numbers
+    //initialized value '2' then checking t&f then increamente'2'and every time adding initialization'2';(i+=2)=(2+=2=4)etc.
+    for(i=1;i<=10;i++){
+        console.log("1X"+i+"="+i);
+    }
+    //1st using concatination
+    for(i=1;i<=10;i++){
+        console.log("2X"+i+"="+2*i);
+    }
+    // 2.while loop
+    // while(condition){
+    //     while condition execute;
+    //     increatment/decreament
+    // }
+//      var x=prompt("enter the number");
+//    x=0;
+//     while(x<10){
+//          console.log(x);
+//                    x++;
+
+
+//     }
+//    3. do-while
+// let t=prompt("enter the number")
+// let j=50;
+// do{
+//     document.write(j+"geetha"+"<br>");
+//     j++;
+// }
+// while (j<60) 
+    
+
+// const array = [1, 2, 3, 4, 5];
+
+// Using for-in loop for array
+// for (b in array) {
+//   document.write(array[b]);
+// }
+// let arr = [1, 2, 3, 4, 5];
+
+// //using for-in for array
+// for (let value of arr) {
+//     document.write(value);
+// }
+//--------------------using break and continue------------
+//  for(i=1;i<=20;i++){
+//      if(i>=10){
+//          break;
+//         }//below 10 numbers is printed. 
+    // document.write(i+"geetha"+'<br>')
+    // once condition is takes inside the document at the time it takes below the 11 numbers 
+//  }
+ for(k=2;k<=40;k++){
+     if(k==10){       
+         continue;
+        }//
+     document.write(k);
+
+}
+//fibbonocci
+a=0;
+b=4;
+c=3;
+console.log(a);
+console.log(b);
+
+while(c<=100){
+    c=a+b;
+    a=b;
+    b=c;
+    if(c>=50){
+        break;
+    }
+    console.log(c);
+}
+
+
+   
+// ----------------------------------------------
+// let a=0;
+// while(a<=20){
+//     console.log('a');
+//     a++;
+// }
+
+
+
+
+
+    </script>
+</body>
+</html>
